@@ -1,0 +1,6 @@
+FROM sawfish AS sawfish-test
+COPY tests/run_tests.sh /
+
+RUN chmod +x run_tests.sh
+
+CMD ["./run_tests.sh"]
